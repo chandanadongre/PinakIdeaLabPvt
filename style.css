@@ -43,11 +43,11 @@ nav {
 
 /* Mobile Menu Styles */
 #mobileMenu .dropdown > div {
-    @apply absolute left-full top-0;
+    @apply relative left-full top-0;
 }
 
 #mobileMenu a {
-    @apply p-2 text-white no-underline;
+    @apply p-8 text-white no-underline;
 }
 
 #mobileMenu a:hover {
@@ -55,11 +55,11 @@ nav {
 }
 
 #mobileMenu .dropdown {
-    @apply block relative left-0 mt-1 text-white p-2 rounded-md w-full;
+    @apply block relative left-0 mt-4 text-white p-8 rounded-md w-full;
 }
 
 #mobileMenu .dropdown a {
-    @apply text-white p-2 whitespace-nowrap bg-gray-800 transition-colors duration-300 ease-in-out;
+    @apply text-white p-8 whitespace-nowrap bg-gray-800 transition-colors duration-300 ease-in-out;
 }
 
 /* Overlay */
