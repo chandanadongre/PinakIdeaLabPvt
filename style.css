@@ -1,179 +1,73 @@
-* {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .scrollbar-hide {
+      -ms-overflow-style: none; 
+      scrollbar-width: none;    
+    }
+  
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;  
+    }
+  }
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url('bg2.jpg');               
-    background-size: cover;                 
-    background-attachment: fixed; 
+    margin: 0;
     padding: 0;
-    margin: 0;   
-    color: white; 
-}
+    min-height: 100vh;
+  }
+  
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
 button {
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    @apply text-base transition-colors duration-300 ease-in-out;
 }
+
 a {
-    transition: color 0.3s ease;
+    @apply transition-colors duration-300 ease-in-out;
 }
+
 a:hover {
-    color: #48bb78; 
+    @apply text-green-500;
 }
+
 nav {
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white;  
+    @apply bg-black bg-opacity-50 text-white;
 }
-body, nav {
-    color: white;                          
-} 
+
+/* Mobile Menu Styles */
 #mobileMenu .dropdown > div {
-    position: relative;
-    left: 100%; 
-    top: 0;     
+    @apply absolute left-full top-0;
 }
 
 #mobileMenu a {
-    padding: 8px;
-    color: white;
-    text-decoration: none;
+    @apply p-2 text-white no-underline;
 }
 
 #mobileMenu a:hover {
-    color: #48bb78; 
+    @apply text-green-500;
 }
+
 #mobileMenu .dropdown {
-    display:block; 
-    position: relative;
-    left: 0;
-    margin-top: 4px; 
-    color:white;   
-    padding: 8px;
-    border-radius: 4px;
-    width: 100%; 
+    @apply block relative left-0 mt-1 text-white p-2 rounded-md w-full;
 }
 
 #mobileMenu .dropdown a {
-    color:white;
-    padding: 8px;
-    white-space: nowrap;
-    background-color: #1f2937;
-    transition: color 0.3s ease;
-}
-.built-differently-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: url('background-image.jpg') center/cover no-repeat;
+    @apply text-white p-2 whitespace-nowrap bg-gray-800 transition-colors duration-300 ease-in-out;
 }
 
+/* Overlay */
 .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5); 
+    @apply absolute inset-0 bg-black bg-opacity-50;
 }
 
+/* Content Section */
 .content {
-    position: relative;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-    width: 100%;
-    padding: 1rem;
-    color: white;
-}
-
-/* Text Section */
-.text-section {
-    flex: 1;
-}
-.logo-icon {
-    margin-top: 70px;
-    height: 50px;
-}
-.title {
-    
-    font-size: 4.5rem;
-    font-weight: bold;
-}
-.separator {
-    border: 0;
-    height: 0.25px;
-    width: 590px;
-    background-color: #a3a1a1; 
-    margin: 15px 10px; 
-}
-.subtitle {
-    margin-top: -10px;
-    font-size: 2.3rem;
-    font-weight: 700;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-.highlight {
-    color: rgb(4, 159, 4);
-    display: inline-block; /* Ensures the text is inline and able to be animated */
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
-.cta-button {
-    margin-top: 20px;
-    font-family:'Times New Roman', Times, serif;
-    font-size: larger;
-    background: white;
-    color: #003121;
-    padding: 0.7rem 4.5rem;
-    border-radius: 9999px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-.cta-button:hover {
-    background:#10b981 ;
-}
-
-/* Form Section */
-.form-section {
-    margin-top: 30px;
-    flex: 1;
-    padding: 3rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    max-width: 1000px;
-}
-
-.contact-form {
-    display:inline-flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 110%;
-}
-.form-row {
-    display: inline-flex;
-    gap: 1rem;
-}
-.form-input, .form-select {
-    position: relative;
-    width: 100%;
-    color: black;
-    padding: 0.75rem;
-    border: 1px solid #d1d5db;
-    border-radius: 20px;
-    outline: none;
-    transition: border-color 0.3s;
-}
-.form-input:focus, .form-select:focus {
-    border-color: #10b981;
-}
-.submit-button {
-    background: green;
-    color: white;
-    padding: 0.75rem;
-    font-weight: bold;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background 0.3s;
-    border-radius: 9999px;
+    @apply relative z-10 flex flex-row max-w-screen-xl w-full p-4 text-white;
 }

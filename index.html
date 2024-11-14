@@ -9,25 +9,26 @@
     <link href="./style.css" rel="stylesheet">
  <script src="./js/main.js" defer></script>
      <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-
- 
+    <script src="https://unpkg.com/lucide@latest"></script> 
 
   <script src="./js/main.js" defer></script>
   </head>
 
-  <body class="min-h-screen bg-[url('./img/bg3.png')] bg-cover bg-center  bg-no-repeat">
-    <nav class="bg-opacity-90 text-white sticky top-0 z-10 w-full min-h-screen overflow-x-hidden">
+  <body>
+    <div class="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed relative" 
+       style="background-image: url('./img/bg3.png')">
+    
+    <nav class=" text-white sticky top-0 z-10 w-full min-h-screen overflow-x-hidden">
       <div class="bg-green-700 bg-opacity-80 text-white py-6 px-6 w-full h-full bg-cover ">
         <div class=" text-white container mx-auto flex flex-col md:flex-row justify-between items-center">
-          <div class="flex items-center space-x-2 mt-0 ml-20">
-            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="flex items-center space-x-2 mt-0 ml-4 sm:ml-10 py-2">
+            <svg class="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
             </svg>
-            <span>6516 Colleyville Blvd, Colleyville, TX 76034</span>
+            <span class="text-xs sm:text-sm md:text-base text-2xl font-bold">6516 Colleyville Blvd, Colleyville, TX 76034</span>
           </div>
+          
           <div class="flex items-center space-x-10">
             <img src="./img/hearthlogo.png" alt="Logo" class="h-14">
             <button class="bg-white text-black px-10 py-2 rounded hover:bg-gray-100 transition">
@@ -129,7 +130,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden py-4">
+        <div id="mobile-menu-button" class="hidden md:hidden py-4">
           <div class="flex flex-col space-y-4">
             <a href="#" class="text-white hover:text-green-700">Home</a>
             
@@ -203,7 +204,7 @@
     
     <section class="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat">
       <!-- Content Container -->
-      <div class="relative min-h-screen flex items-center justify-center bg-center mt-10 md:mt-16 px-2">
+      <div class="relative min-h-screen flex items-center justify-center bg-center  px-2">
           <!-- Left Content Section -->
           <div class="flex-1 p-8 text-white">
               <i data-lucide="sprout" class="w-12 h-12 mb-6 text-white"></i>
@@ -283,7 +284,7 @@
           <svg class="w-full h-4 fill-white" viewBox="0 0 200 40" preserveAspectRatio="none">
             <path d="M0 40 L2.5 0 L5 40 L7.5 0 L10 40 L12.5 0 L15 40 L17.5 0 L20 40 L22.5 0 L25 40 L27.5 0 L30 40 L32.5 0 L35 40 L37.5 0 L40 40 L42.5 0 L45 40 L47.5 0 L50 40 L52.5 0 L55 40 L57.5 0 L60 40 L62.5 0 L65 40 L67.5 0 L70 40 L72.5 0 L75 40 L77.5 0 L80 40 L82.5 0 L85 40 L87.5 0 L90 40 L92.5 0 L95 40 L97.5 0 L100 40 L102.5 0 L105 40 L107.5 0 L110 40 L112.5 0 L115 40 L117.5 0 L120 40 L122.5 0 L125 40 L127.5 0 L130 40 L132.5 0 L135 40 L137.5 0 L140 40 L142.5 0 L145 40 L147.5 0 L150 40 L152.5 0 L155 40 L157.5 0 L160 40 L162.5 0 L165 40 L167.5 0 L170 40 L172.5 0 L175 40 L177.5 0 L180 40 L182.5 0 L185 40 L187.5 0 L190 40 L192.5 0 L195 40 L197.5 0 L200 40 L200 40 L0 40 Z" />
           </svg>
-        </div> 
+        </div>
       </div>
   </section>
 
@@ -599,7 +600,7 @@
       <button class="hidden md:block bg-green-700 text-white px-10 py-4 rounded-full hover:bg-white hover:text-green-800 transition flex items-center m-8">See More Tips & Tricks</button>
     </div>
     <hr class="border-t-1 border-gray-400 my-6 w-full">
-    <div class="relative min-h-screen flex flex-col md:flex-row items-center justify-center bg-center mt-10 md:mt-10 px-4">
+    <div class="relative min-h-screen flex flex-col md:flex-row items-center justify-center bg-center  px-4">
       <!-- Left Section -->
       <div class="flex-1 p-8 text-gray-700 relative z-10">
         <img src="./img/leafbg.png" alt="Background Image" class="absolute inset-0 w-full h-full object-cover opacity-10 z-0">
@@ -707,6 +708,7 @@
   </div>
 </div>
   </nav>
+  </div>
   <script type="module" src="/main.js" defer></script>
   </body>
   
