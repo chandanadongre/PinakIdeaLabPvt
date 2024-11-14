@@ -1,5 +1,5 @@
 // Mobile menu toggle
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
 
 
   const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -256,4 +256,4 @@ document.addEventListener('DOMContentLoaded', function() {
       errorMessage.classList.add('hidden');
     }
   });
-  });
+  // });
