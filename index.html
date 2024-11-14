@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamline: Sprinklers, Drainage & Landscaping</title>
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="./style.css" rel="stylesheet">
+ <script src="./js/main.js" defer></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+ 
+
+  <script src="./js/main.js" defer></script>
+  </head>
+
+  <body class="min-h-screen bg-[url('./img/bg3.png')] bg-cover bg-center  bg-no-repeat">
+    <nav class="bg-opacity-90 text-white sticky top-0 z-10 w-full min-h-screen overflow-x-hidden">
+      <div class="bg-green-700 bg-opacity-80 text-white py-6 px-6 w-full h-full bg-cover ">
+        <div class=" text-white container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <div class="flex items-center space-x-2 mt-0 ml-20">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            <span>6516 Colleyville Blvd, Colleyville, TX 76034</span>
+          </div>
+          <div class="flex items-center space-x-10">
+            <img src="./img/hearthlogo.png" alt="Logo" class="h-14">
+            <button class="bg-white text-black px-10 py-2 rounded hover:bg-gray-100 transition">
+              GET MY RATES
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 bg-opacity-70 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center py-4">
+            <img src="./img/logo2.png" alt="Logo" class="h-10">
+          
+            <button id="mobile-menu-button" class="md:hidden text-white">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+            </button>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+              <a href="#" class="hover:text-green-700 transition">Home</a>
+            <!-- Landscaping Dropdown -->
+            <div class="relative group">
+              <button class="hover:text-green-700 transition">
+                Landscaping
+                <span class="ml-1">▼</span>
+              </button>
+              <div class="absolute hidden group-hover:block w-64 bg-white text-gray-900 mt-2 rounded-lg shadow-xl">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Landscaping Services</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Landscape Design</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Lawn Care Services</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Landscape Lighting</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Fence Installation</a>
+              </div>
+            </div>
+
+            <!-- Drainage Dropdown -->
+            <div class="relative group">
+              <button class="hover:text-green-700 transition">
+                Drainage
+                <span class="ml-1">▼</span>
+              </button>
+              <div class="absolute hidden group-hover:block w-64 bg-white text-gray-900 mt-2 rounded-lg shadow-xl">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Drain Services</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">French Drain Installation</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Channel Drain Installation</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Yard Drainage System</a>
+              </div>
+            </div>
+
+            <!-- Sprinkler Dropdown -->
+            <div class="relative group">
+              <button class="hover:text-green-700 transition">
+                Sprinkler & Irrigation
+                <span class="ml-1">▼</span>
+              </button>
+              <div class="absolute hidden group-hover:block w-64 bg-white text-gray-900 mt-2 rounded-lg shadow-xl">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sprinkler & Irrigation Services</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sprinkler System Installation</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sprinkler Repair</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Commercial Sprinkler Repair</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Drip Irrigation Installation</a>
+              </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="relative group">
+              <button class="hover:text-green-700 transition">
+                About
+                <span class="ml-1">▼</span>
+              </button>
+              <div class="absolute hidden group-hover:block w-64 bg-white text-gray-900 mt-2 rounded-lg shadow-xl">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">About Us</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Project Gallery</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Reviews</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tips & Tricks</a>
+              </div>
+            </div>
+
+            <!-- Contact Dropdown -->
+            <div class="relative group">
+              <button class="hover:text-green-700 transition">
+                Contact
+                <span class="ml-1">▼</span>
+              </button>
+              <div class="absolute hidden group-hover:block w-64 bg-white text-gray-900 mt-2 rounded-lg shadow-xl">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Contact Us</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Fort Worth Service Area</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call Button -->
+          <button class="hidden md:block bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition">
+            Call (817) 701-8920
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden py-4">
+          <div class="flex flex-col space-y-4">
+            <a href="#" class="text-white hover:text-green-700">Home</a>
+            
+            <!-- Mobile Dropdowns -->
+            <div class="space-y-2">
+              <button class="mobile-dropdown-trigger w-full text-left text-white hover:text-green-500" data-target="landscaping-mobile">
+                Landscaping ▼
+              </button>
+              <div id="landscaping-mobile" class="hidden pl-4 space-y-2">
+                <a href="#" class="block text-white hover:text-green-700">Landscaping Services</a>
+                <a href="#" class="block text-white hover:text-green-700">Landscape Design</a>
+                <a href="#" class="block text-white hover:text-green-700">Lawn Care Services</a>
+                <a href="#" class="block text-white hover:text-green-700">Landscape Lighting</a>
+                <a href="#" class="block text-white hover:text-green-700">Fence Installation</a>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <button class="mobile-dropdown-trigger w-full text-left text-white hover:text-green-700" data-target="drainage-mobile">
+                Drainage ▼
+              </button>
+              <div id="drainage-mobile" class="hidden pl-4 space-y-2">
+                <a href="#" class="block text-white hover:text-green-700">Drain Services</a>
+                <a href="#" class="block text-white hover:text-green-700">French Drain Installation</a>
+                <a href="#" class="block text-white hover:text-green-700">Channel Drain Installation</a>
+                <a href="#" class="block text-white hover:text-green-700">Yard Drainage System</a>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <button class="mobile-dropdown-trigger w-full text-left text-white hover:text-green-700" data-target="sprinkler-mobile">
+                Sprinkler & Irrigation ▼
+              </button>
+              <div id="sprinkler-mobile" class="hidden pl-4 space-y-2">
+                <a href="#" class="block text-white hover:text-green-700">Sprinkler & Irrigation Services</a>
+                <a href="#" class="block text-white hover:text-green-700">Sprinkler System Installation</a>
+                <a href="#" class="block text-white hover:text-green-700">Sprinkler Repair</a>
+                <a href="#" class="block text-white hover:text-green-700">Commercial Sprinkler Repair</a>
+                <a href="#" class="block text-white hover:text-green-700">Drip Irrigation Installation</a>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <button class="mobile-dropdown-trigger w-full text-left text-white hover:text-green-700" data-target="about-mobile">
+                About ▼
+              </button>
+              <div id="about-mobile" class="hidden pl-4 space-y-2">
+                <a href="#" class="block text-white hover:text-green-700">About Us</a>
+                <a href="#" class="block text-white hover:text-green-700">Project Gallery</a>
+                <a href="#" class="block text-white hover:text-green-700">Reviews</a>
+                <a href="#" class="block text-white hover:text-green-700">Tips & Tricks</a>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <button class="mobile-dropdown-trigger w-full text-left text-white hover:text-green-700" data-target="contact-mobile">
+                Contact ▼
+              </button>
+              <div id="contact-mobile" class="hidden pl-4 space-y-2">
+                <a href="#" class="block text-white hover:text-green-700">Contact Us</a>
+                <a href="#" class="block text-white hover:text-green-700">Fort Worth Service Area</a>
+              </div>
+            </div>
+
+            <!-- Mobile Call Button -->
+            <button class="bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition w-full">
+              Call (817) 701-8920
+            </button>
+          </div>
+        </div>
+    
+    <section class="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat">
+      <!-- Content Container -->
+      <div class="relative min-h-screen flex items-center justify-center bg-center mt-10 md:mt-16 px-2">
+          <!-- Left Content Section -->
+          <div class="flex-1 p-8 text-white">
+              <i data-lucide="sprout" class="w-12 h-12 mb-6 text-white"></i>
+              <img src="./img/icon.png" alt="Logo Icon" class="ml-6 w-10 h-10 mb-4">
+              <h1 class="text-5xl font-bold mb-4">Built Differently</h1>
+              <hr class="border-gray-400 w-full max-w-xl my-6">
+              <p class="text-4xl font-semibold font-serif mb-8">
+                A <span class="cyclingagain-word text-green-600 inline-block">Streamlined</span> Approach To Your Outdoor Needs
+              </p>
+              <button class="px-8 py-3 text-lg font-serif text-emerald-900 bg-white hover:bg-green-800 hover:text-white rounded-full transition-colors duration-300">
+                  Schedule An On-Site Assessment
+              </button>
+          </div>
+  
+          <!-- Right Form Section -->
+          <div class="flex-1 rounded-lg p-8  z-10">
+            <form class="space-y-6" id="contactForm">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800"
+                  id="name"
+                  required
+                >
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="tel"
+                  placeholder="Phone"
+                  class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800"
+                  id="phone"
+                  required
+                >
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800"
+                  id="email"
+                  required
+                >
+              </div>
+              <input
+                type="text"
+                placeholder="Address"
+                class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800"
+                id="address"
+                required
+              >
+              <select class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800" id="customerType" required>
+                <option value="">Select an option</option>
+                <option>Yes, I'm a potential new customer</option>
+                <option>No, I'm an existing customer</option>
+                <option>Neither</option>
+              </select>
+              <select class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800" id="serviceType" required>
+                <option value="">Select a service</option>
+                <option>Sprinklers</option>
+                <option>Drainage</option>
+                <option>Landscaping</option>
+                <option>Hardscaping</option>
+                <option>Other</option>
+              </select>
+              <div id="errorMessage" class="text-red-500 text-sm hidden">Please fill in all required fields before submitting.</div>
+              <button
+                type="submit"
+                class="w-full px-6 py-3 text-white bg-green-700 hover:bg-green-800 rounded-full font-bold transition-colors duration-300"
+                id="submitButton"
+              >
+                Get In Touch Today
+              </button>
+            </form>
+          </div>
+      </div>  
+        <!-- Zigzag Border -->
+        <div class="absolute bottom-0 left-0 right-0">
+          <svg class="w-full h-4 fill-white" viewBox="0 0 200 40" preserveAspectRatio="none">
+            <path d="M0 40 L2.5 0 L5 40 L7.5 0 L10 40 L12.5 0 L15 40 L17.5 0 L20 40 L22.5 0 L25 40 L27.5 0 L30 40 L32.5 0 L35 40 L37.5 0 L40 40 L42.5 0 L45 40 L47.5 0 L50 40 L52.5 0 L55 40 L57.5 0 L60 40 L62.5 0 L65 40 L67.5 0 L70 40 L72.5 0 L75 40 L77.5 0 L80 40 L82.5 0 L85 40 L87.5 0 L90 40 L92.5 0 L95 40 L97.5 0 L100 40 L102.5 0 L105 40 L107.5 0 L110 40 L112.5 0 L115 40 L117.5 0 L120 40 L122.5 0 L125 40 L127.5 0 L130 40 L132.5 0 L135 40 L137.5 0 L140 40 L142.5 0 L145 40 L147.5 0 L150 40 L152.5 0 L155 40 L157.5 0 L160 40 L162.5 0 L165 40 L167.5 0 L170 40 L172.5 0 L175 40 L177.5 0 L180 40 L182.5 0 L185 40 L187.5 0 L190 40 L192.5 0 L195 40 L197.5 0 L200 40 L200 40 L0 40 Z" />
+          </svg>
+        </div> 
+      </div>
+  </section>
+
+  <section class="bg-white py-10 relative">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="relative flex items-center space-x-4">
+  
+        <!-- Left navigation button -->
+        <button class="text-emerald-600 text-3xl hover:text-green-800" id="scrollLeft">
+          &lt;
+        </button>
+  
+        <!-- Scrollable container for services -->
+        <div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide" id="serviceContainer">
+          <!-- Sprinklers -->
+          <div class="text-center p-6 mt-4 snap-start flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 border-l border-r border-gray-300">
+            <div class="mb-4 flex justify-center">
+              <i data-lucide="droplets" class="w-16 text-emerald-600"></i>
+            </div>
+            <img src="./img/sprinkler.png" class="mb-2 w-1/4 mx-auto">
+            <h3 class="text-2xl font-bold mb-4">Sprinklers</h3>
+            <p class="text-gray-600 mb-6">Design, Preparation, Materials & Installation</p>
+            <div class="flex justify-center">
+              <button class="hidden md:block bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <!-- Drainage -->
+          <div class="text-center p-6 mt-4 snap-start flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 border-l border-r border-gray-300">
+            <div class="mb-4 flex justify-center">
+              <i data-lucide="droplets" class="w-16 text-emerald-600"></i>
+            </div>
+            <img src="./img/drainage.png" class="mb-2 w-1/4 mx-auto">
+            <h3 class="text-2xl font-bold mb-4">Drainage</h3>
+            <p class="text-gray-600 mb-6">Drains, Sump Pumps, Yard Drainage Systems, & Grates</p>
+            <div class="flex justify-center">
+              <button class="hidden md:block bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+  
+          <!-- Landscaping -->
+          <div class="text-center p-6 mt-4 snap-start flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 border-l border-r border-gray-300">
+            <div class="mb-4 flex justify-center">
+              <i data-lucide="droplets" class="w-16 text-emerald-600"></i>
+            </div>
+            <img src="./img/landscaping.png" class="mb-2 w-1/4 mx-auto">
+            <h3 class="text-2xl font-bold mb-4">Landscaping</h3>
+            <p class="text-gray-600 mb-6">Development, Installation, Maintenance & Enhancement</p>
+            <div class="flex justify-center">
+              <button class="hidden md:block bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+  
+          <!-- Hardscaping -->
+          <div class="text-center p-6 mt-4 snap-start flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 border-l border-r border-gray-300">
+            <div class="mb-4 flex justify-center">
+              <i data-lucide="droplets" class="w-16 text-emerald-600"></i>
+            </div>
+            <img src="./img/hardscaping.png" class="mb-2 w-1/4 mx-auto">
+            <h3 class="text-2xl font-bold mb-4">Hardscaping</h3>
+            <p class="text-gray-600 mb-6">Patios, Pavers, Porticos, Specialty Concrete & Fencing</p>
+            <div class="flex justify-center">
+              <button class="hidden md:block bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div class="text-center p-6 mt-4 snap-start flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 border-l border-r border-gray-300">
+            <div class="mb-4 flex justify-center">
+              <i data-lucide="droplets" class="w-16 text-emerald-600"></i>
+            </div>
+            <img src="./img/lighting.png" class="mb-2 w-1/4 mx-auto">
+            <h3 class="text-2xl font-bold mb-4">Lighting</h3>
+            <p class="text-gray-600 mb-6">Outdoor Landscape Lighting & LED Installation</p>
+            <div class="flex justify-center">
+              <button class="hidden md:block bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Right navigation button -->
+        <button class="text-emerald-600 text-3xl hover:text-green-800" id="scrollRight">
+          &gt;
+        </button>
+      </div>
+    </div>
+    <hr class="border-gray-300 w-4/5 mx-auto my-12 ">
+    <div class="relative text-center py-12 overflow-hidden">
+      <div class="absolute inset-y-0 left-0 w-1/3 bg-no-repeat bg-contain" 
+          style="background-image: url('./img/bg_leaf.jpg'); background-position: left center; opacity: 0.2;">
+      </div>
+      <div class="absolute inset-y-0 right-0 w-1/3 bg-no-repeat bg-contain" 
+          style="background-image: url('./img/bg_leaf2.jpg'); background-position: right center; opacity: 0.2;">
+      </div>
+      <div class="relative z-10 bg-white bg-opacity-80 p-8">
+          <h2 class="font-sans text-green-700 hover:text-green-800 text-7xl">We Handle Everything For You!</h2>
+          <hr class="border-gray-300 w-3/5 mx-auto my-12">
+          <h4 class="font-sans text-black font-serif text-xl">Streamline Designs offers custom professional landscaping services in the Greater Dallas Fort Worth Metroplex.</h4>
+          <h1 class="font-sans text-green-800 font-bold text-8xl">30</h1>
+          <h1 class="font-sans text-green-800 text-6xl">Plus Years</h1>
+          <hr class="border-gray-300 w-3/5 mx-auto my-12">
+          <h1 class="font-sans font-bold text-black text-2xl">Experience</h1>
+          <h4 class="font-sans text-black font-serif text-xl">Service crews are hired for year-round service.</h4><br>
+          <h2 class="font-sans font-bold text-black text-2xl">In The DFW Metroplex</h2>
+          <h4 class="font-sans text-black font-serif text-xl">Creating professional landscaping services and outdoor needs.</h4>
+      </div>
+  </div>
+  </section>
+  <section class="bg-yellow-50 py-16">
+    <div class="max-w-6xl mx-auto px-8 text-center flex flex-col justify-center items-center">
+      <img src="./img/icon.png" class="mb-2 w-22 h-22 mx-auto">
+      <h1 class="font-sans font-bold text-green-800 hover:text-green-700 text-5xl">Recent Projects</h1><br><br>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
+      <div class="group relative">
+        <img src="./img/chooseus.png" alt="Project 1" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-1">
+      </div>
+      
+      <div class="group relative">
+        <img src="./img/pic2.jpg" alt="Project 2" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+      <div class="group relative">
+        <img src="./img/pic3.jpeg" alt="Project 3" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+      <div class="group relative">
+        <img src="./img/pic4.jpeg" alt="Project 4" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+      <div class="group relative">
+        <img src="./img/pic5.jpeg" alt="Project 5" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+      <div class="group relative">
+        <img src="./img/pic6.jpg" alt="Project 6" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+      <div class="group relative">
+        <img src="./img/pic7.jpeg" alt="Project 7" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+      <div class="group relative">
+        <img src="./img/pic8.jpeg" alt="Project 8" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+      <div class="group relative">
+        <img src="./img/pic9.jpg" alt="Project 9" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+      <div class="group relative">
+        <img src="./img/pic10.jpg" alt="Project 10" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+      <div class="group relative">
+        <img src="./img/pic11.jpeg" alt="Project 11" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+      <div class="group relative">
+        <img src="./img/pic12.jpeg" alt="Project 12" class="w-full h-full object-cover rounded-md transition-transform transform group-hover:scale-95 p-2">
+      </div>
+    </div>
+    <div class="bg-white p-8 mt-16 rounded-lg shadow-lg mx-4">
+      <div class="flex flex-col lg:flex-row items-center justify-between">
+        <div class="relative lg:w-1/2 mb-8 lg:mb-0">
+          <img src="./img/leafbg.png" alt="Background Image" class="absolute inset-0 w-full h-full object-cover opacity-10 z-0">
+          <div class="relative z-10 text-left">
+            <h2 class="text-4xl font-sans font-bold text-green-900 mb-4">Why Choose Us?</h2>
+            <p class="text-lg font-sans text-gray-900">
+              Streamline Landscape is your go-to for top-notch professional sprinkler, drainage & landscaping services that are customized to suit your outdoor requirements. As a locally owned and operated team, we take great pride in creating and maintaining breathtaking landscapes throughout the metroplex. Our highly skilled crews, trained to the highest standards, deliver exceptional year-round service. <br>
+              <br> With our unwavering reliability and meticulous maintenance procedures, we ensure that your properties stay healthy and visually appealing all year long. Trust us to bring your distinctive vision to life as it is our ultimate passion.
+            </p>
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <img src="./img/chooseus.png" alt="About Image" class="w-full h-full object-cover rounded-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-black/50">
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white p-7 mt-16 rounded-lg shadow-lg mx-4">
+      <div class="flex flex-col lg:flex-row items-center justify-between">
+        
+        <div class="bg-green-800 w-full h-full lg:w-1/3">
+          <img src="./img/icon.png" class="w-12 h-12 mb-4 mx-auto">
+          <h2 class=" text-3xl text-center text-yellow-300 font-sans font-bold mb-4">Craftsmanship</h2><br>
+          <p class="font-sans text-white text-center text-lg mb-4 text-center">
+            At Streamline, we take pride in our meticulously crafted landscape designs that cater to the unique preferences of our commercial clients while placing a high priority on sustainability.
+          </p><br>
+          <button class="hidden md:block bg-white text-green-800 px-6 py-2 rounded-full hover:bg-green-600 hover:text-white transition mx-auto">
+            How We Work
+          </button><br><br>
+        </div>
+
+        <div class="bg-white p-5 w-full lg:w-1/3">
+          <h2 class="text-green-900 text-2xl font-sans font-bold mb-4">Greater DFW Metroplex</h2>
+          <p class="text-gray-900 font-sans text-lg">We offer professional sprinkler, drainage and landscaping services to the Greater Dallas Fort Worth Metroplex. As a team that is both locally owned and operated, we are genuinely proud of our ability to create and maintain stunning landscapes across the entire area. 
+            <br>If you’re unsure whether we provide service to your specific location, please reach out. We’ll gladly check to see if you’re in our service area.</p>
+        </div>
+
+        <div class="bg-white p-6  w-full lg:w-1/3 ">
+          <h2 class="text-green-900 text-2xl font-sans font-bold mb-4">Our Founder</h2>
+          <p class="text-gray-900 font-sans text-lg">Spencer is proud of the hands-on leadership, professionalism, and customer service-oriented culture of StreamLine Designs. 
+            <br> He is also happy to offer comprehensive landscaping and outdoor services that allow StreamLine Designs to be a simple solution for commercial and residential landscaping needs.
+            </p><br>
+          <p class="text-green-900 font-bold">– Spencer Perkins</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center text-center mt-12">
+      <div class="w-24 h-24 mb-4">
+        <img src="./img/reviewslogo.png" class="w-full h-full object-contain opacity-80">
+      </div>
+      <h1 class="text-center text-gray-600 font-sans font-bold text-3xl">Our Reviews</h1><br>
+      <p class="text-center text-gray-600 font-sans text-xl">
+        Our clients rave about the exceptional quality of Streamline's sprinkler, drainage & landscaping services. 
+        <span class="font-bold">Our team has an unwavering commitment to customer satisfaction.</span>
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full p-6">
+        <div class="aspect-video w-full">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/v39NEezkgFo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="aspect-video w-full">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/TtBmgxUcKFc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>  
+      <div class="bg-white p-2 mt-16 text-black font-sans font-bold shadow-lg mx-auto w-[95%] max-w-screen-xl">
+        <div class="flex items-center justify-between space-x-10">
+          <div class="flex items-center space-x-4">
+            <img src="./img/google_logo.png" class="h-8 w-1/4">
+            <h2>Excellent</h2>
+            <img src="./img/stars.png" class="h-14 w-auto">
+            <h2>4.9</h2><h2>|</h2><h2> 58 </h2><h2>reviews</h2>
+          </div>
+          <a href="https://www.google.com/search?hl=en-US&gl=us&q=Streamline+Designs+Sprinkler+and+Drainage,+16+Village+Ln+STE+200,+Colleyville,+TX+76034&ludocid=12376415525843041200&lsig=AB86z5W5Ohjh87xwGcP6hV9Bj-2J" target="_blank">
+            <button class="hidden md:block bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+              Write a review
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="min-h-screen py-12 px-6 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">        
+          <div id="reviewGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+          <div class="mt-8 text-center">
+            <button id="loadMoreBtn" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-sans hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center mx-auto">
+                Load More Reviews
+            </button>
+          </div>
+      </div>        
+      
+    </div>
+  </section>
+  <section class="relative w-full h-96">
+    <img src="./img/bg3.png" alt="About Image" class="w-full h-full object-cover">
+    
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40">
+      <p class="font-bold font-sans text-5xl mb-6">Locally Owned & Operated Team</p>
+      <p class="font-sans text-xl mb-6">Our professional landscaping services utilize highly trained year-round crews.</p>
+      <button class="hidden md:block bg-green-600 text-white px-6 py-2 rounded-full hover:bg-white hover:text-green-800 transition">Learn More</button>
+    </div>
+  </section>
+  
+  <section class="bg-white py-16 font-sans">
+    <h1 class="text-center font-sans font-bold text-green-800 text-4xl mb-9">Tips & Tricks</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mx-auto max-w-6xl px-8">
+
+      <div class="bg-white rounded-lg overflow-hidden border border-gray-600 shadow-lg h-120 p-6 hover:shadow-2xl transition-shadow duration-300">
+        <img src="./img/christmas.jpeg" alt="Description" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h2 class="font-bold text-green-800 text-2xl mb-2">How to use Christmas Decorations to create an outstanding holiday display</h2>
+          <p class="text-gray-400 mb-4">Thinking back to the holidays during childhood, the illuminations of Christmas lights on neighborhood lawns and homes bring back nostalgic.</p>
+          <a href="#" class="text-green-700 font-semibold hover:underline m-4">Read More »</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden border border-gray-600 shadow-lg h-120 p-6 hover:shadow-2xl transition-shadow duration-300">
+        <img src="./img/beauty.jpeg" alt="Tip Image 2" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-green-800 text-2xl mb-2">Beautify Your Lawn with Texas Winter Flowers</h3>
+          <p class="text-gray-400 mb-4">Trying to keep a colorful garden in the unpredictable weather of Texas should be considered an extreme sport.</p>
+          <a href="#" class="text-green-700  hover:underline m-4">Read More »</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden border border-gray-600 shadow-lg h-120 p-6 hover:shadow-2xl transition-shadow duration-300">
+        <img src="./img/winter.jpeg" alt="Tip Image 3" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-green-800 text-2xl mb-2">Winter Landscaping Projects for a Better Spring</h3>
+          <p class="text-gray-400 mb-4">You might not be planning to spend much time landscaping in the winter, but the cooler months are actually the</p>
+          <a href="#" class="text-green-700  hover:underline m-4">Read More »</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden border border-gray-600 shadow-lg h-120 p-6 hover:shadow-2xl transition-shadow duration-300">
+        <img src="./img/light.jpeg" alt="Tip Image 4" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-green-800 text-2xl mb-2">The Benefits of Landscape Lighting</h3>
+          <p class="text-gray-400 mb-4">Landscape lighting can bring numerous benefits to your outdoor space, both practical and aesthetic.</p>
+          <a href="#" class="text-green-700  hover:underline m-4">Read More »</a>
+        </div>
+      </div>
+      </div>
+    <div class="flex justify-center">
+      <button class="hidden md:block bg-green-700 text-white px-10 py-4 rounded-full hover:bg-white hover:text-green-800 transition flex items-center m-8">See More Tips & Tricks</button>
+    </div>
+    <hr class="border-t-1 border-gray-400 my-6 w-full">
+    <div class="relative min-h-screen flex flex-col md:flex-row items-center justify-center bg-center mt-10 md:mt-10 px-4">
+      <!-- Left Section -->
+      <div class="flex-1 p-8 text-gray-700 relative z-10">
+        <img src="./img/leafbg.png" alt="Background Image" class="absolute inset-0 w-full h-full object-cover opacity-10 z-0">
+        <i data-lucide="sprout" class="w-12 h-12 mb-6 text-white"></i>
+        <img src="./img/icon.png" alt="Logo Icon" class="ml-6 w-10 h-10 mb-4">
+        <h1 class="text-5xl font-bold mb-4">Built Differently</h1>
+        <hr class="border-gray-400 w-full max-w-xl my-7">
+        <p class="text-4xl font-semibold font-serif mb-10">
+          A <span class="cycling-word text-green-600 inline-block">Streamlined</span> Approach To Your Outdoor Needs
+        </p>
+      </div>
+      
+      <!-- Right Section (Form) -->
+      <div class="flex-1 rounded-lg p-8 bg-white z-10">
+        <form class="space-y-6" id="contactForm">
+          <div>
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800"
+              id="name"
+              required
+            >
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              type="tel"
+              placeholder="Phone"
+              class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800"
+              id="phone"
+              required
+            >
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800"
+              id="email"
+              required
+            >
+          </div>
+          <input
+            type="text"
+            placeholder="Address"
+            class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800"
+            id="address"
+            required
+          >
+          <select class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800" id="customerType" required>
+            <option value="">Select an option</option>
+            <option>Yes, I'm a potential new customer</option>
+            <option>No, I'm an existing customer</option>
+            <option>Neither</option>
+          </select>
+          <select class="w-full px-4 py-3 rounded-full border border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-all duration-300 text-gray-800" id="serviceType" required>
+            <option value="">Select a service</option>
+            <option>Sprinklers</option>
+            <option>Drainage</option>
+            <option>Landscaping</option>
+            <option>Hardscaping</option>
+            <option>Other</option>
+          </select>
+          <div id="errorMessage" class="text-red-500 text-sm hidden">Please fill in all required fields before submitting.</div>
+          <button
+            type="submit"
+            class="w-full px-6 py-3 text-white bg-green-700 hover:bg-green-800 rounded-full font-bold transition-colors duration-300"
+            id="submitButton"
+          >
+            Get In Touch Today
+          </button>
+        </form>
+      </div>
+    </div>
+    
+  <hr class="border-t-1 border-gray-400 my-0 w-full">
+  </section>
+  <footer class="bg-white py-8">
+    <div class="flex justify-center mb-8">
+      <img src="./img/logo2.png" alt="Logo" class="h-16 w-auto">
+    </div>
+    <p class="font-bold font-sans text-gray-800 text-center text-2xl mb-4">Call Us: (817) 701-8920</p>
+    <p class="text-center mb-2"><a href="mailto:sales@streamlinelc.com" class="text-green-800 hover:text-blue-800 text-1xl">Email Us: sales@streamlinelc.com</a></p>
+    <p class="text-center text-green-800 mb-2">6516 Colleyville Blvd, <br> Colleybille, TX 76034</p>
+    <div class="flex justify-center space-x-4 py-4">
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="./img/facebook-logo.png" alt="Facebook" class="h-10 w-auto hover:scale-110 transition-transform duration-300">
+      </a>
+      <a href="https://www.twitter.com" target="_blank">
+        <img src="./img/twitter-logo.png" alt="Twitter" class="h-10 w-auto hover:scale-110 transition-transform duration-300">
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="./img/insta.jpeg" alt="Instagram" class="h-10 w-auto hover:scale-110 transition-transform duration-300">
+      </a>
+    </div >
+    <div class="flex flex-col items-center justify-center space-y-2 py-2">
+      <a href="https://app.gethearth.com/financing/39395/67078/prequalify?utm_campaign=39395&utm_content=white&utm_medium=contractor-website&utm_source=contractor&utm_term=67078" target="_blank">
+        <img src="./img/payment.png" alt="payment" class="h-32 w-auto ">
+      </a>
+      <a href="https://www.google.com/search?hl=en-US&gl=us&q=Streamline+Designs+Sprinkler+and+Drainage,+16+Village+Ln+STE+200,+Colleyville,+TX+76034&ludocid=12376415525843041200&lsig=AB86z5W5Ohjh87xwGcP6hV9Bj-2J" target="_blank">
+        <img src="./img/google.png" alt="payment" class="h-32 w-auto ">
+      </a>
+    </div>   
+  </footer>
+  <div class="bg-gray-200 text-center">
+    <p class="font-sans text-gray-600"><br>Copyright © 2024 StreamLine Landscape</p><br>
+  </div>
+</div>
+  </nav>
+  <script type="module" src="/main.js" defer></script>
+  </body>
+  
+</html>
